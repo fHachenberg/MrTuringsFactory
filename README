@@ -1,0 +1,7 @@
+MrTuring's Factory - a little puzzle game
+
+You have to program and combine machines to fulfill objectives like "get 10 boxes from the production unit to the shipment unit by using only limited numbers and variations of pushers, grabbing robots, assembly lines, ...
+Now these robots, assembly lines and other parts will have to be programmed in some levels. In order to do that, we introduce two additional devices: a number scanner and a number spraying thingie. The number scanner can detect one of 10 different digits on a box (0 - 9), the spraying device can spray a specific digit onto a box. You can connect these scanning and spraying devices to your other machines in a predefined meaningful way. For example, a robot can have up to 10 different target positions. If you connect a number scanner to the robot, the current target position (to which the robot is approximating) is determined by the box under the scanner. 
+Using these basic building blocks we can construct very complex state machines.
+
+I'm planning a very simple behaviour for the boxes. They can only move orthogonally in most cases and every movement in the factory is very strictly synchronized: Every possible movement happens withing one single step. So blocks fall down as fast as they move along an assembly line.
